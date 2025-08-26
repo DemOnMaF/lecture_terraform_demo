@@ -1,3 +1,6 @@
+# variable "empty" {
+#   type    = string
+# }
 variable "string" {
   type    = string
   default = "some string"
