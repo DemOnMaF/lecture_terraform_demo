@@ -38,10 +38,10 @@ resource "random_password" "any_uniq_name" {
   length = 16
 }
 
-# resource "local_file" "xxx" {
-#   content  = "our-cool-project-${random_password.any_uniq_name.result}"
-#   filename = "/tmp/xxx.txt"
-# }
+resource "local_file" "xxx" {
+  content  = "our-cool-project-${random_password.any_uniq_name.result}"
+  filename = "/tmp/xxx.txt"
+}
 
 # data "local_file" "from_resourse" {
 
